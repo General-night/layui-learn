@@ -1,0 +1,40 @@
+<!--https://ukoko.gitee.io/2022/05/16/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8layui/#more-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01_布局容器</title>
+    <link rel="stylesheet" href="layui/css/layui.css"/>
+</head>
+<body>
+
+<!--固定宽度并且居中的容器-->
+<div class="layui-container" style="height: 300px; background-color: rebeccapurple">
+    <div class="layui-row">
+        <div class="layui-col-md3" style="height: 200px; background-color: #1E9FFF"></div>
+        <div class="layui-col-md9" style="height: 200px; background-color: #2F4056"></div>
+    </div>
+</div>
+
+<!--宽度不固定100%适应的容器-->
+<div class="layui-fluid" style="height: 300px; background-color: #00F7DE"></div>
+<hr/>
+
+<div class="layui-container" style="height: 300px">
+    <div class="layui-row">
+        <!--        <div class="layui-col-md4" style="height: 100px; background-color: pink">A内容区</div>-->
+        <div class="layui-col-md4 layui-col-lg-offset4" style="height: 100px; background-color: gainsboro">B内容区</div>
+        <!--        <div class="layui-col-md4" style="height: 100px; background-color: darkkhaki">C内容区</div>-->
+    </div>
+</div>
+</div>
+<hr>
+
+<i class="layui-icon layui-icon-face-smile" style="font-size: 30px; color: red;"></i>
+<hr>
+
+<button type="button" class="layui-btn layui-btn layui-btn-lg layui-btn-primary layui-border-green">一个标准的按钮</button>
+<a href="http://www.layui.itze.cn" class="layui-btn">一个可跳转的按钮</a>
+<script src="layui/layui.js"></script>
+</body>
+</html>

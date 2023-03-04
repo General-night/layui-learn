@@ -1,0 +1,28 @@
+<!--https://ukoko.gitee.io/2022/05/16/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8layui/#more-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05_时间控件</title>
+    <link rel="stylesheet" href="layui/css/layui.css"/>
+</head>
+<body>
+<div class="layui-inline"> <!-- 注意：这一层元素并不是必须的 -->
+    <input type="text" class="layui-input" id="test1">
+</div>
+
+<script src="layui/layui.js"></script>
+<script>
+    layui.use('laydate', function () {
+        const laydate = layui.laydate;
+
+        //执行一个layData实例
+        laydate.render({
+            elem: '#test1', //指定元素
+            range: true,
+            theme: 'grid'
+        });
+    })
+</script>
+</body>
+</html>
